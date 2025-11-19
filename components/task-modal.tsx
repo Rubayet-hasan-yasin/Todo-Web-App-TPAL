@@ -23,7 +23,6 @@ export default function TaskModal({
   setTask
 }: TaskModalProps) {
 
-console.log(task);
 
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -50,7 +49,7 @@ console.log(task);
 
   return (
     <Transition appear show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-50" onClose={onClose}>
+      <Dialog as="div" className="relative z-50" onClose={handleGoBack}>
         <TransitionChild
           as={Fragment}
           enter="ease-out duration-300"
@@ -121,6 +120,7 @@ console.log(task);
                         onClick={(e) => {
                           e.currentTarget?.showPicker?.();
                         }}
+                        required
                       // onFocus={(e) => {
                       //   e.currentTarget.showPicker?.();
                       // }}
