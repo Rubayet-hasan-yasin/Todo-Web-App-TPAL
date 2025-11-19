@@ -162,7 +162,7 @@ export default function DashboardLayout({ children, activeTab }: DashboardLayout
                     </header>
 
                     {/* Main Content */}
-                    <main className="flex-1 bg-[#EEF7FF] max-h-[calc(100vh-82px)] overflow-y-auto [&::-webkit-scrollbar]:hidden border">
+                    <main className="flex-1 bg-[#EEF7FF] max-h-[calc(100vh-82px)] overflow-y-auto [&::-webkit-scrollbar]:hidden">
                         {children}
                     </main>
                 </div>
